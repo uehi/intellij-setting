@@ -58,4 +58,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="js" value="&lt;?= $this-&gt;Html-&gt;script('$END$', ['block' =&gt; true]); ?&gt;" description="cake css" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
