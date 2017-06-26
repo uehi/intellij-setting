@@ -1,0 +1,7 @@
+<templateSet group="html/xml">
+  <template name="void" value="javascript:void(0);" description="javascript void" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
