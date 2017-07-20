@@ -8,6 +8,7 @@
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="WITH_SUBDIRECTORIES" value="false" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.php" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
@@ -22,14 +23,14 @@
       <mask>*。ｂぁ.php</mask>
       <mask>*。ｂ.php</mask>
       <mask>*。.php</mask>
-      <mask>*.php</mask>
-      <mask>*..php</mask>
       <mask>*.b.php</mask>
       <mask>*.bl.php</mask>
       <mask>*.bla.php</mask>
       <mask>*.blad.php</mask>
       <mask>*.blade..php</mask>
       <mask>*.blade.php</mask>
+      <mask>*..php</mask>
+      <mask>*.php</mask>
     </recentFileMasks>
   </component>
 </application>
