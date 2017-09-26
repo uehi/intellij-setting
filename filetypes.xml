@@ -7,6 +7,7 @@
       <mapping pattern=".env.pro" type="PLAIN_TEXT" />
       <mapping pattern=".env_local" type="PLAIN_TEXT" />
       <mapping pattern=".env.local" type="PLAIN_TEXT" />
+      <mapping pattern="_form_server" type="PLAIN_TEXT" />
       <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
       <mapping ext="tml" type="YAML" />
