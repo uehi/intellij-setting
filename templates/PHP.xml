@@ -1,0 +1,72 @@
+<templateSet group="PHP">
+  <template name="&lt;?" value="&lt;?php $END$ ?&gt;" description="php tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="&lt;?=" value="&lt;?= $END$; ?&gt;" description="php echo tag" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eem" value="empty($END$)" description="empty()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="iif" value="&lt;?php if () : ?&gt;&#10;    $END$&#10;&lt;?php endif; ?&gt;" description="if-endif" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ffee" value="&lt;?php foreach ($ITERABLE$ as $VAR_VALUE$) : ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="foreach-endforeach" toReformat="false" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eei" value="&lt;?php endif; ?&gt;" description="endif" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eef" value="&lt;?php endforeach; ?&gt;" description="endforeach" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="css" value="&lt;?= $this-&gt;Html-&gt;css('$END$', ['block' =&gt; true]); ?&gt;" description="cake css" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="script" value="&lt;?= $this-&gt;Html-&gt;script('$END$', ['block' =&gt; true]); ?&gt;" description="cake script" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="scriptStart" value="&lt;?php ob_start(); ?&gt;&lt;script&gt;&lt;?php ob_end_clean(); // for completion ?&gt;&#10;&lt;?php $this-&gt;Html-&gt;scriptStart(['block' =&gt; true]); ?&gt;&#10;    &lt;?php $this-&gt;Minify-&gt;scriptStart(); ?&gt;&#10;        $END$&#10;    &lt;?php $this-&gt;Minify-&gt;scriptEnd(); ?&gt;&#10;&lt;?php $this-&gt;Html-&gt;scriptEnd(); ?&gt;&#10;&lt;?php ob_start(); ?&gt;&lt;/script&gt;&lt;?php ob_end_clean(); // for completion ?&gt;" description="cake script start" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="js" value="&lt;?= $this-&gt;Html-&gt;script('$END$', ['block' =&gt; true]); ?&gt;" description="cake css" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="/***" value="/*&#10;|--------------------------------------------------------------------------&#10;| $END$&#10;|--------------------------------------------------------------------------&#10;*/" description="comment for laravel" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
